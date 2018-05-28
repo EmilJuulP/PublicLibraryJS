@@ -29,4 +29,4 @@ pl.view.deleteBook = {
             selectE1.remove( selectE1.selectedIndex);
         }
     }
-}
+};
