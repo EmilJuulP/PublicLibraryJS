@@ -4,6 +4,8 @@ function Book(slots) {
     this.year = slots.year;
 };
 
+Book.instances = {};
+
 Book.convertRow2Obj = function (bookRow) {
     var book = new Book( bookRow);
     return book;
@@ -25,7 +27,7 @@ Book.loadAll = function () {
         console.log( keys.length + " books loaded.");
         for (i=0; i < keys.length; i++) {
             key = keys[i];
-            Book.instances[key] = Book.convertRow20bj( bookTable[key]);
+            Book.instances[key] = Book.convertRow2Obj( bookTable[key]);
         }
     }
 };
