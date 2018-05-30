@@ -3,7 +3,7 @@ pl.view.updateBook = {
         var formE1 = document.forms['Book'],
             saveButton = formE1.commit,
             selectBookE1 = formE1.selectBook;
-        var i=0, key="", keys[], book=null, optionE1=null;
+        var i=0, key="", keys=[], book=null, optionE1=null;
         // Load all book objects
         Book.loadAll();
         //populate the selection list with books
